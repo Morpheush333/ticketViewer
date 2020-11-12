@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+            width: 1000px;
+            background-color: lightgray;
+            border: 1px solid lightblue;
+            padding: 10px;
+        }
+
+        table{
+            width:80%;
+            margin: auto;
+            text-align: center;
+            background-color: lightsteelblue;
+        }
+        table td, table th { border: 1px solid grey;}
+        table th { background: white;}
+        .pagination-div{user-select: none;}
+        .pagination-div span{border-radius:3px;border:1px solid #999;
+            padding:5px;margin:10px 0px 0px 10px;display:inline-block}
+        span.selected{background: darkgray;}
+    </style>
+</head>
+<body>
+<h2>Ticket</h2>
+<table>
+    <tr><th>Id</th>
+        <th>Description</th>
+        <th>Subject</th>
+    </tr>
+    <tr th:each="field : ${item}">
+        <td th:text="${field.id}"></td>
+        <td th:text="${field.description}"></td>
+        <td th:text="${field.subject}"></td>
+    </tr>
+</table>
+<a th:href="@{/ticketViewer/tickets}">return</a>
+</body>
+</html>
