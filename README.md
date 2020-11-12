@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 https://github.com/Morpheush333/ticketViewer/tree/master
 
-2. Change password and email for request to Zendesc TicketApp
+2. Change password and email for request to Zendesc TicketApp in:
 
 com.mateuszmedon.ticketViewer.service.TicketsViewerService
 
@@ -26,7 +26,7 @@ private static final String PASSWORD = "****";
 
 run application on Spring-boot
 
-provide on your browse url
+enter the url in your browser
 ```
 http://localhost:8080/ticketViewer/tickets
 ```
@@ -45,11 +45,10 @@ com.mateuszmedon.ticketViewer.TicketViewerApplicationTests
 
 ## Authors
 
-* **Mateusz Medon** - *Initial work* - [PurpleBooth](http://mateuszmedon.com/)
+* **Mateusz Medon** - *Initial work* - [portfolio](http://mateuszmedon.com/)
 
 
 ## Acknowledgments
 
 * Zendesk
 * Inspiration
-* etc
